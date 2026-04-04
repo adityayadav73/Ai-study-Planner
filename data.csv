@@ -1,0 +1,503 @@
+user_id,subject,preferred_time,revision_time,study_time,duration,studied,reminder_response,date
+1,Math,Evening,60,7 PM,60,1,Yes,2026-04-01
+1,Physics,Evening,60,7 PM,30,0,No,2026-04-02
+1,Math,Evening,60,7 PM,60,1,Yes,2026-04-03
+1,Chemistry,Evening,60,7 PM,0,0,No,2026-04-04
+1,Math,Evening,60,7 PM,60,1,Yes,2026-04-05
+1,Physics,Evening,60,7 PM,45,1,Yes,2026-04-06
+1,Biology,Evening,60,7 PM,0,0,No,2026-04-07
+1,Physics,Evening,60,7 PM,30,0,No,2026-04-08
+1,Math,Evening,60,7 PM,60,1,Yes,2026-04-09
+1,Chemistry,Evening,60,7 PM,20,1,Yes,2026-04-10
+2,Math,Morning,45,8 AM,30,1,Yes,2026-04-01
+2,Physics,Morning,45,8 AM,60,1,Yes,2026-04-02
+2,Chemistry,Morning,45,8 AM,0,0,No,2026-04-03
+2,Math,Morning,45,8 AM,45,1,Yes,2026-04-04
+2,Biology,Morning,45,8 AM,0,0,No,2026-04-05
+2,Physics,Morning,45,8 AM,60,1,Yes,2026-04-06
+2,Math,Morning,45,8 AM,30,1,Yes,2026-04-07
+2,Chemistry,Morning,45,8 AM,0,0,No,2026-04-08
+2,Physics,Morning,45,8 AM,60,1,Yes,2026-04-09
+2,Math,Morning,45,8 AM,40,1,Yes,2026-04-10
+3,Physics,Night,90,10 PM,60,1,Yes,2026-04-01
+3,Math,Night,90,10 PM,0,0,No,2026-04-02
+3,Chemistry,Night,90,10 PM,45,1,Yes,2026-04-03
+3,Physics,Night,90,10 PM,60,1,Yes,2026-04-04
+3,Biology,Night,90,10 PM,0,0,No,2026-04-05
+3,Math,Night,90,10 PM,30,1,Yes,2026-04-06
+3,Physics,Night,90,10 PM,60,1,Yes,2026-04-07
+3,Chemistry,Night,90,10 PM,20,1,Yes,2026-04-08
+3,Biology,Night,90,10 PM,0,0,No,2026-04-09
+3,Physics,Night,90,10 PM,60,1,Yes,2026-04-10
+4,Chemistry,Evening,30,6 PM,30,1,Yes,2026-04-01
+4,Biology,Evening,30,6 PM,0,0,No,2026-04-02
+4,Chemistry,Evening,30,6 PM,30,1,Yes,2026-04-03
+4,Math,Evening,30,6 PM,0,0,No,2026-04-04
+4,Chemistry,Evening,30,6 PM,30,1,Yes,2026-04-05
+4,Biology,Evening,30,6 PM,20,1,Yes,2026-04-06
+4,Math,Evening,30,6 PM,0,0,No,2026-04-07
+4,Chemistry,Evening,30,6 PM,30,1,Yes,2026-04-08
+4,Biology,Evening,30,6 PM,0,0,No,2026-04-09
+4,Chemistry,Evening,30,6 PM,30,1,Yes,2026-04-10
+5,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-01
+5,DBMS,Evening,60,7 PM,45,1,Yes,2026-04-02
+5,Operating System,Evening,60,7 PM,30,0,No,2026-04-03
+5,Machine Learning,Evening,60,7 PM,60,1,Yes,2026-04-04
+5,Computer Networks,Evening,60,7 PM,0,0,No,2026-04-05
+5,Software Engineering,Evening,60,7 PM,50,1,Yes,2026-04-06
+5,DBMS,Evening,60,7 PM,40,1,Yes,2026-04-07
+6,Machine Learning,Morning,45,8 AM,40,1,Yes,2026-04-01
+6,Data Structures,Morning,45,8 AM,30,1,Yes,2026-04-02
+6,DBMS,Morning,45,8 AM,60,1,Yes,2026-04-03
+6,Operating System,Morning,45,8 AM,0,0,No,2026-04-04
+6,Computer Networks,Morning,45,8 AM,50,1,Yes,2026-04-05
+6,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-06
+6,Machine Learning,Morning,45,8 AM,45,1,Yes,2026-04-07
+7,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+7,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-02
+7,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+7,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+7,DBMS,Night,90,10 PM,45,1,Yes,2026-04-05
+7,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+7,Operating System,Night,90,10 PM,60,1,Yes,2026-04-07
+8,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+8,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+8,Computer Networks,Evening,30,6 PM,30,1,Yes,2026-04-03
+8,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+8,Machine Learning,Evening,30,6 PM,30,1,Yes,2026-04-05
+8,Operating System,Evening,30,6 PM,20,1,Yes,2026-04-06
+8,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+9,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-01
+9,DBMS,Evening,60,7 PM,40,1,Yes,2026-04-02
+9,Operating System,Evening,60,7 PM,0,0,No,2026-04-03
+9,Machine Learning,Evening,60,7 PM,50,1,Yes,2026-04-04
+9,Computer Networks,Evening,60,7 PM,0,0,No,2026-04-05
+9,Software Engineering,Evening,60,7 PM,45,1,Yes,2026-04-06
+9,DBMS,Evening,60,7 PM,30,1,Yes,2026-04-07
+10,Machine Learning,Morning,45,8 AM,40,1,Yes,2026-04-01
+10,Data Structures,Morning,45,8 AM,35,1,Yes,2026-04-02
+10,DBMS,Morning,45,8 AM,60,1,Yes,2026-04-03
+10,Operating System,Morning,45,8 AM,0,0,No,2026-04-04
+10,Computer Networks,Morning,45,8 AM,45,1,Yes,2026-04-05
+10,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-06
+10,Machine Learning,Morning,45,8 AM,50,1,Yes,2026-04-07
+11,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+11,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-02
+11,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+11,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+11,DBMS,Night,90,10 PM,45,1,Yes,2026-04-05
+11,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+11,Operating System,Night,90,10 PM,60,1,Yes,2026-04-07
+12,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+12,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+12,Computer Networks,Evening,30,6 PM,30,1,Yes,2026-04-03
+12,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+12,Machine Learning,Evening,30,6 PM,30,1,Yes,2026-04-05
+12,Operating System,Evening,30,6 PM,20,1,Yes,2026-04-06
+12,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+13,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-01
+13,DBMS,Morning,60,8 AM,45,1,Yes,2026-04-02
+13,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-03
+13,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+13,Computer Networks,Morning,60,8 AM,40,1,Yes,2026-04-05
+13,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+13,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+14,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-01
+14,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+14,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+14,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-04
+14,Software Engineering,Night,90,10 PM,0,0,No,2026-04-05
+14,Data Structures,Night,90,10 PM,60,1,Yes,2026-04-06
+14,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-07
+15,Data Structures,Morning,60,8 AM,55,1,Yes,2026-04-01
+15,DBMS,Morning,60,8 AM,40,1,Yes,2026-04-02
+15,Operating System,Morning,60,8 AM,0,0,No,2026-04-03
+15,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-04
+15,Computer Networks,Morning,60,8 AM,45,1,Yes,2026-04-05
+15,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+15,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+16,Machine Learning,Evening,45,7 PM,60,1,Yes,2026-04-01
+16,DBMS,Evening,45,7 PM,50,1,Yes,2026-04-02
+16,Operating System,Evening,45,7 PM,0,0,No,2026-04-03
+16,Computer Networks,Evening,45,7 PM,55,1,Yes,2026-04-04
+16,Software Engineering,Evening,45,7 PM,0,0,No,2026-04-05
+16,Data Structures,Evening,45,7 PM,60,1,Yes,2026-04-06
+16,Machine Learning,Evening,45,7 PM,65,1,Yes,2026-04-07
+17,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+17,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+17,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+17,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+17,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+17,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+17,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+18,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+18,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+18,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+18,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+18,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+18,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+18,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+19,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+19,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+19,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+19,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+19,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+19,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+19,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+20,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-01
+20,DBMS,Evening,60,7 PM,45,1,Yes,2026-04-02
+20,Operating System,Evening,60,7 PM,0,0,No,2026-04-03
+20,Machine Learning,Evening,60,7 PM,55,1,Yes,2026-04-04
+20,Computer Networks,Evening,60,7 PM,40,1,Yes,2026-04-05
+20,Software Engineering,Evening,60,7 PM,0,0,No,2026-04-06
+20,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-07
+21,Machine Learning,Morning,45,8 AM,50,1,Yes,2026-04-01
+21,DBMS,Morning,45,8 AM,40,1,Yes,2026-04-02
+21,Operating System,Morning,45,8 AM,0,0,No,2026-04-03
+21,Computer Networks,Morning,45,8 AM,45,1,Yes,2026-04-04
+21,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-05
+21,Data Structures,Morning,45,8 AM,55,1,Yes,2026-04-06
+21,Machine Learning,Morning,45,8 AM,60,1,Yes,2026-04-07
+22,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+22,Computer Networks,Night,90,10 PM,50,1,Yes,2026-04-02
+22,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+22,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+22,DBMS,Night,90,10 PM,55,1,Yes,2026-04-05
+22,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+22,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+23,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+23,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+23,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+23,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+23,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+23,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+23,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+24,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+24,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+24,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+24,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+24,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+24,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+24,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+25,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-01
+25,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+25,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+25,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+25,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-05
+25,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+25,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-07
+26,Machine Learning,Evening,60,7 PM,55,1,Yes,2026-04-01
+26,DBMS,Evening,60,7 PM,40,1,Yes,2026-04-02
+26,Operating System,Evening,60,7 PM,0,0,No,2026-04-03
+26,Computer Networks,Evening,60,7 PM,50,1,Yes,2026-04-04
+26,Software Engineering,Evening,60,7 PM,0,0,No,2026-04-05
+26,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-06
+26,Machine Learning,Evening,60,7 PM,65,1,Yes,2026-04-07
+27,Data Structures,Morning,45,8 AM,50,1,Yes,2026-04-01
+27,DBMS,Morning,45,8 AM,45,1,Yes,2026-04-02
+27,Operating System,Morning,45,8 AM,0,0,No,2026-04-03
+27,Machine Learning,Morning,45,8 AM,60,1,Yes,2026-04-04
+27,Computer Networks,Morning,45,8 AM,40,1,Yes,2026-04-05
+27,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-06
+27,Data Structures,Morning,45,8 AM,55,1,Yes,2026-04-07
+28,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+28,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+28,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+28,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+28,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+28,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+28,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+29,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+29,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+29,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+29,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+29,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+29,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+29,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+30,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+30,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+30,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+30,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+30,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+30,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+30,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+31,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-01
+31,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+31,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+31,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+31,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-05
+31,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+31,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-07
+32,Machine Learning,Evening,45,7 PM,60,1,Yes,2026-04-01
+32,DBMS,Evening,45,7 PM,50,1,Yes,2026-04-02
+32,Operating System,Evening,45,7 PM,0,0,No,2026-04-03
+32,Computer Networks,Evening,45,7 PM,55,1,Yes,2026-04-04
+32,Software Engineering,Evening,45,7 PM,0,0,No,2026-04-05
+32,Data Structures,Evening,45,7 PM,60,1,Yes,2026-04-06
+32,Machine Learning,Evening,45,7 PM,65,1,Yes,2026-04-07
+33,Data Structures,Morning,60,8 AM,55,1,Yes,2026-04-01
+33,DBMS,Morning,60,8 AM,45,1,Yes,2026-04-02
+33,Operating System,Morning,60,8 AM,0,0,No,2026-04-03
+33,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-04
+33,Computer Networks,Morning,60,8 AM,50,1,Yes,2026-04-05
+33,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+33,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+34,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+34,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+34,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+34,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+34,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+34,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+34,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+35,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+35,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+35,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+35,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+35,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+35,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+35,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+36,Machine Learning,Evening,60,7 PM,55,1,Yes,2026-04-01
+36,DBMS,Evening,60,7 PM,45,1,Yes,2026-04-02
+36,Operating System,Evening,60,7 PM,0,0,No,2026-04-03
+36,Computer Networks,Evening,60,7 PM,50,1,Yes,2026-04-04
+36,Software Engineering,Evening,60,7 PM,0,0,No,2026-04-05
+36,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-06
+36,Machine Learning,Evening,60,7 PM,65,1,Yes,2026-04-07
+37,Data Structures,Morning,45,8 AM,50,1,Yes,2026-04-01
+37,DBMS,Morning,45,8 AM,40,1,Yes,2026-04-02
+37,Operating System,Morning,45,8 AM,0,0,No,2026-04-03
+37,Machine Learning,Morning,45,8 AM,60,1,Yes,2026-04-04
+37,Computer Networks,Morning,45,8 AM,45,1,Yes,2026-04-05
+37,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-06
+37,Data Structures,Morning,45,8 AM,55,1,Yes,2026-04-07
+38,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+38,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+38,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+38,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+38,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+38,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+38,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+39,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+39,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+39,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+39,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+39,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+39,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+39,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+40,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+40,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+40,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+40,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+40,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+40,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+40,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+41,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-01
+41,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+41,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+41,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+41,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-05
+41,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+41,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-07
+42,Machine Learning,Evening,45,7 PM,60,1,Yes,2026-04-01
+42,DBMS,Evening,45,7 PM,50,1,Yes,2026-04-02
+42,Operating System,Evening,45,7 PM,0,0,No,2026-04-03
+42,Computer Networks,Evening,45,7 PM,55,1,Yes,2026-04-04
+42,Software Engineering,Evening,45,7 PM,0,0,No,2026-04-05
+42,Data Structures,Evening,45,7 PM,60,1,Yes,2026-04-06
+42,Machine Learning,Evening,45,7 PM,65,1,Yes,2026-04-07
+43,Data Structures,Morning,60,8 AM,55,1,Yes,2026-04-01
+43,DBMS,Morning,60,8 AM,45,1,Yes,2026-04-02
+43,Operating System,Morning,60,8 AM,0,0,No,2026-04-03
+43,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-04
+43,Computer Networks,Morning,60,8 AM,50,1,Yes,2026-04-05
+43,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+43,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+44,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+44,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+44,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+44,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+44,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+44,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+44,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+45,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+45,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+45,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+45,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+45,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+45,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+45,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+46,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+46,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+46,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+46,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+46,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+46,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+46,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+47,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-01
+47,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+47,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+47,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+47,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-05
+47,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+47,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-07
+48,Machine Learning,Evening,45,7 PM,60,1,Yes,2026-04-01
+48,DBMS,Evening,45,7 PM,50,1,Yes,2026-04-02
+48,Operating System,Evening,45,7 PM,0,0,No,2026-04-03
+48,Computer Networks,Evening,45,7 PM,55,1,Yes,2026-04-04
+48,Software Engineering,Evening,45,7 PM,0,0,No,2026-04-05
+48,Data Structures,Evening,45,7 PM,60,1,Yes,2026-04-06
+48,Machine Learning,Evening,45,7 PM,65,1,Yes,2026-04-07
+49,Data Structures,Morning,60,8 AM,55,1,Yes,2026-04-01
+49,DBMS,Morning,60,8 AM,45,1,Yes,2026-04-02
+49,Operating System,Morning,60,8 AM,0,0,No,2026-04-03
+49,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-04
+49,Computer Networks,Morning,60,8 AM,50,1,Yes,2026-04-05
+49,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+49,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+50,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+50,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+50,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+50,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+50,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+50,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+50,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+51,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-01
+51,DBMS,Evening,60,7 PM,45,1,Yes,2026-04-02
+51,Operating System,Evening,60,7 PM,0,0,No,2026-04-03
+51,Machine Learning,Evening,60,7 PM,55,1,Yes,2026-04-04
+51,Computer Networks,Evening,60,7 PM,40,1,Yes,2026-04-05
+51,Software Engineering,Evening,60,7 PM,0,0,No,2026-04-06
+51,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-07
+52,Machine Learning,Morning,45,8 AM,50,1,Yes,2026-04-01
+52,DBMS,Morning,45,8 AM,40,1,Yes,2026-04-02
+52,Operating System,Morning,45,8 AM,0,0,No,2026-04-03
+52,Computer Networks,Morning,45,8 AM,45,1,Yes,2026-04-04
+52,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-05
+52,Data Structures,Morning,45,8 AM,55,1,Yes,2026-04-06
+52,Machine Learning,Morning,45,8 AM,60,1,Yes,2026-04-07
+53,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+53,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+53,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+53,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+53,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+53,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+53,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+54,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+54,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+54,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+54,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+54,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+54,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+54,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+55,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+55,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+55,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+55,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+55,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+55,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+55,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+56,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-01
+56,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+56,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+56,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+56,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-05
+56,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+56,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-07
+57,Machine Learning,Evening,45,7 PM,60,1,Yes,2026-04-01
+57,DBMS,Evening,45,7 PM,50,1,Yes,2026-04-02
+57,Operating System,Evening,45,7 PM,0,0,No,2026-04-03
+57,Computer Networks,Evening,45,7 PM,55,1,Yes,2026-04-04
+57,Software Engineering,Evening,45,7 PM,0,0,No,2026-04-05
+57,Data Structures,Evening,45,7 PM,60,1,Yes,2026-04-06
+57,Machine Learning,Evening,45,7 PM,65,1,Yes,2026-04-07
+58,Data Structures,Morning,60,8 AM,55,1,Yes,2026-04-01
+58,DBMS,Morning,60,8 AM,45,1,Yes,2026-04-02
+58,Operating System,Morning,60,8 AM,0,0,No,2026-04-03
+58,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-04
+58,Computer Networks,Morning,60,8 AM,50,1,Yes,2026-04-05
+58,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+58,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+59,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+59,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+59,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+59,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+59,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+59,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+59,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+60,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+60,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+60,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+60,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+60,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+60,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+60,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+61,Machine Learning,Evening,60,7 PM,55,1,Yes,2026-04-01
+61,DBMS,Evening,60,7 PM,45,1,Yes,2026-04-02
+61,Operating System,Evening,60,7 PM,0,0,No,2026-04-03
+61,Computer Networks,Evening,60,7 PM,50,1,Yes,2026-04-04
+61,Software Engineering,Evening,60,7 PM,0,0,No,2026-04-05
+61,Data Structures,Evening,60,7 PM,60,1,Yes,2026-04-06
+61,Machine Learning,Evening,60,7 PM,65,1,Yes,2026-04-07
+62,Data Structures,Morning,45,8 AM,50,1,Yes,2026-04-01
+62,DBMS,Morning,45,8 AM,40,1,Yes,2026-04-02
+62,Operating System,Morning,45,8 AM,0,0,No,2026-04-03
+62,Machine Learning,Morning,45,8 AM,60,1,Yes,2026-04-04
+62,Computer Networks,Morning,45,8 AM,45,1,Yes,2026-04-05
+62,Software Engineering,Morning,45,8 AM,0,0,No,2026-04-06
+62,Data Structures,Morning,45,8 AM,55,1,Yes,2026-04-07
+63,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+63,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+63,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+63,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+63,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+63,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+63,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+64,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+64,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+64,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+64,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+64,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+64,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+64,DBMS,Evening,30,6 PM,0,0,No,2026-04-07
+65,Machine Learning,Morning,60,8 AM,50,1,Yes,2026-04-01
+65,Data Structures,Morning,60,8 AM,45,1,Yes,2026-04-02
+65,DBMS,Morning,60,8 AM,60,1,Yes,2026-04-03
+65,Operating System,Morning,60,8 AM,0,0,No,2026-04-04
+65,Computer Networks,Morning,60,8 AM,55,1,Yes,2026-04-05
+65,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+65,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-07
+66,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-01
+66,DBMS,Night,90,10 PM,50,1,Yes,2026-04-02
+66,Operating System,Night,90,10 PM,0,0,No,2026-04-03
+66,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+66,Computer Networks,Night,90,10 PM,60,1,Yes,2026-04-05
+66,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+66,Data Structures,Night,90,10 PM,65,1,Yes,2026-04-07
+67,Machine Learning,Evening,45,7 PM,60,1,Yes,2026-04-01
+67,DBMS,Evening,45,7 PM,50,1,Yes,2026-04-02
+67,Operating System,Evening,45,7 PM,0,0,No,2026-04-03
+67,Computer Networks,Evening,45,7 PM,55,1,Yes,2026-04-04
+67,Software Engineering,Evening,45,7 PM,0,0,No,2026-04-05
+67,Data Structures,Evening,45,7 PM,60,1,Yes,2026-04-06
+67,Machine Learning,Evening,45,7 PM,65,1,Yes,2026-04-07
+68,Data Structures,Morning,60,8 AM,55,1,Yes,2026-04-01
+68,DBMS,Morning,60,8 AM,45,1,Yes,2026-04-02
+68,Operating System,Morning,60,8 AM,0,0,No,2026-04-03
+68,Machine Learning,Morning,60,8 AM,60,1,Yes,2026-04-04
+68,Computer Networks,Morning,60,8 AM,50,1,Yes,2026-04-05
+68,Software Engineering,Morning,60,8 AM,0,0,No,2026-04-06
+68,Data Structures,Morning,60,8 AM,60,1,Yes,2026-04-07
+69,Operating System,Night,90,10 PM,60,1,Yes,2026-04-01
+69,Computer Networks,Night,90,10 PM,55,1,Yes,2026-04-02
+69,Data Structures,Night,90,10 PM,0,0,No,2026-04-03
+69,Machine Learning,Night,90,10 PM,70,1,Yes,2026-04-04
+69,DBMS,Night,90,10 PM,50,1,Yes,2026-04-05
+69,Software Engineering,Night,90,10 PM,0,0,No,2026-04-06
+69,Operating System,Night,90,10 PM,65,1,Yes,2026-04-07
+70,DBMS,Evening,30,6 PM,30,1,Yes,2026-04-01
+70,Software Engineering,Evening,30,6 PM,0,0,No,2026-04-02
+70,Computer Networks,Evening,30,6 PM,35,1,Yes,2026-04-03
+70,Data Structures,Evening,30,6 PM,0,0,No,2026-04-04
+70,Machine Learning,Evening,30,6 PM,40,1,Yes,2026-04-05
+70,Operating System,Evening,30,6 PM,25,1,Yes,2026-04-06
+70,DBMS,Evening,30,6 PM,0,0,No,2026-04-07

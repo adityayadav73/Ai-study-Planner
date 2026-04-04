@@ -1,0 +1,8 @@
+user,subject,reminder_time,response,study_time,date
+aditya,other,10:10,Yes,1,2026-04-04
+aditya,Physics,10:05,No,10,2026-04-04
+aditys,DBMS,10:25,Yes,10,2026-04-04
+aditya,Physics,10:25,Yes,50,2026-04-04
+aditya,Math,10:25,Yes,60,2026-04-04
+aditya,Physics,10:05,Yes,60,2026-04-04
+aditya,Physics,10:05,Yes,5,2026-04-04

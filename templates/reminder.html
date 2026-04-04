@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Reminder</title>
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.analysis-btn {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>⏰ AI Study Reminder</h2>
+
+<!-- ✅ Daily Study Form -->
+<form action="/submit" method="POST">
+
+<label>Your Name:</label>
+<input type="text" name="user" placeholder="Enter your name" required>
+
+<!-- Subject -->
+<label>Select Subject:</label>
+<select id="subject" name="subject">
+    <option>Math</option>
+    <option>Physics</option>
+    <option>DBMS</option>
+    <option>Operating System</option>
+    <option>Machine Learning</option>
+    <option value="other">➕ Add New</option>
+</select>
+
+<input type="text" id="newSubject" placeholder="Enter new subject" style="display:none;">
+
+<!-- Preferred Time -->
+<label>Preferred Study Time:</label>
+<select name="preferred_time">
+    <option>Morning</option>
+    <option>Evening</option>
+    <option>Night</option>
+</select>
+
+<!-- Reminder -->
+<label>Reminder Time:</label>
+<input type="time" name="reminder_time" required>
+
+<button type="button" onclick="startReminder()">⏰ Start Reminder</button>
+
+<!-- Revision -->
+<label>Revision Time (minutes):</label>
+<input type="number" name="revision_time" placeholder="Enter revision time">
+
+<!-- Response -->
+<label>Did you study?</label>
+<select name="response">
+    <option>Yes</option>
+    <option>No</option>
+</select>
+
+<!-- Study Time -->
+<label>Study Time (minutes):</label>
+<input type="number" name="study_time" placeholder="Enter study time">
+
+<button type="submit">🚀 Submit Study</button>
+
+</form>
+
+<!-- 📊 Analysis Section -->
+<div class="section">
+<form action="/analysis" method="POST">
+    <input type="text" name="user" placeholder="Enter name for report" required>
+    <button type="submit" class="analysis-btn">📊 Get Weekly AI Report</button>
+</form>
+</div>
+
+</div>
+
+<!-- 🔥 JS for Add Subject -->
+<script>
+
+// 🔥 Subject Add Logic
+let subjectSelect = document.getElementById("subject");
+let newSubjectInput = document.getElementById("newSubject");
+
+subjectSelect.addEventListener("change", function() {
+    if (this.value === "other") {
+        newSubjectInput.style.display = "block";
+        newSubjectInput.name = "subject";
+    } else {
+        newSubjectInput.style.display = "none";
+    }
+});
+
+
+// 🔔 Reminder Function
+function startReminder() {
+
+    let subject = document.getElementById("subject").value;
+    let timeInput = document.querySelector('input[name="reminder_time"]').value;
+
+    if (!timeInput) {
+        alert("Please select time first!");
+        return;
+    }
+
+    let now = new Date();
+    let reminderTime = new Date();
+
+    let [hours, minutes] = timeInput.split(":");
+    reminderTime.setHours(hours);
+    reminderTime.setMinutes(minutes);
+    reminderTime.setSeconds(0);
+
+    let diff = reminderTime - now;
+
+    if (diff < 0) {
+        alert("Time already passed!");
+        return;
+    }
+
+    setTimeout(() => {
+        if (Notification.permission === "granted") {
+            new Notification("📚 Study Reminder", {
+                body: "Time to study " + subject + " 🔥",
+            });
+        }
+    }, diff);
+
+    alert("✅ Reminder set successfully!");
+}
+
+
+// 🔔 Permission
+Notification.requestPermission();
+
+</script>
+</body>
+</html>

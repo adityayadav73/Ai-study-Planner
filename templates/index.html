@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studay Planear</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+    <h2>Studay Planner</h2>
+    <form onsubmit="sendToWhatsApp(); return false;"></form>
+        <h3>{{prediction_txt}}</h3>
+        <label>Subject</label><br>
+        <input type="text" id="subject"><br><br>
+
+        <label> Preferred Time</label><br>
+        <select id="preferred_time">
+            <option>Morning</option>
+            <option>Eveving</option>
+            <option>Night</option>
+        </select><br><br>
+        
+        <label>Revision Time(minutes):</label><br>
+        <input type="number" id="revision_time"><br><br>
+
+        <label >Study Time:</label><br>
+        <input type="time" id="study_time "><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+     <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let subject = document.getElementById("subject").value;
+    let time = document.getElementById("preferred_time").value;
+
+    // WhatsApp message
+    let message = "I studied " + subject + " at " + time;
+
+    let phone = "91XXXXXXXXXX"; // apna number
+
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+});
+</script>
+</body>
+</html>
