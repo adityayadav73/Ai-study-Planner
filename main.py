@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, session
 import sqlite3
 from datetime import datetime
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 app.secret_key = "secret123"
@@ -10,7 +11,6 @@ def init_db():
     conn = sqlite3.connect("study.db")
     cursor = conn.cursor()
 
-    # Users table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -19,7 +19,6 @@ def init_db():
     )
     """)
 
-    # Study data table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS study_data (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -41,7 +40,7 @@ init_db()
 
 # ================= ROUTES =================
 
-# 🏠 Home (Blog)
+# 🏠 Home
 @app.route("/")
 def home():
     return render_template("blog.html")
@@ -54,19 +53,30 @@ def register():
         username = request.form["username"]
         password = request.form["password"]
 
+        if len(username) < 4:
+            return render_template("register.html", error="Username must be at least 4 characters")
+
+        if len(password) < 6:
+            return render_template("register.html", error="Password must be at least 6 characters")
+
         conn = sqlite3.connect("study.db")
         cursor = conn.cursor()
 
-        try:
-            cursor.execute(
-                "INSERT INTO users (username, password) VALUES (?, ?)",
-                (username, password)
-            )
-            conn.commit()
-        except:
-            return "User already exists ❌"
+        cursor.execute("SELECT * FROM users WHERE username=?", (username,))
+        if cursor.fetchone():
+            conn.close()
+            return render_template("register.html", error="User already exists ❌")
 
+        hashed_password = generate_password_hash(password)
+
+        cursor.execute(
+            "INSERT INTO users (username, password) VALUES (?, ?)",
+            (username, hashed_password)
+        )
+
+        conn.commit()
         conn.close()
+
         return redirect("/login")
 
     return render_template("register.html")
@@ -82,19 +92,15 @@ def login():
         conn = sqlite3.connect("study.db")
         cursor = conn.cursor()
 
-        cursor.execute(
-            "SELECT * FROM users WHERE username=? AND password=?",
-            (username, password)
-        )
+        cursor.execute("SELECT * FROM users WHERE username=?", (username,))
         user = cursor.fetchone()
-
         conn.close()
 
-        if user:
+        if user and check_password_hash(user[2], password):
             session["user"] = username
             return redirect("/form")
         else:
-            return "Invalid login ❌"
+            return render_template("login.html", error="Invalid login ❌")
 
     return render_template("login.html")
 
@@ -107,17 +113,17 @@ def logout():
 
 
 # 📋 Form Page
-@app.route("/form", methods=["GET", "POST"]) # Yahan methods add karein
+@app.route("/form")
 def form():
     if "user" not in session:
         return redirect("/login")
+
     return render_template("reminder.html", user=session["user"])
 
 
 # 📥 Save Study Data
 @app.route("/submit", methods=["POST"])
 def submit():
-
     if "user" not in session:
         return redirect("/login")
 
@@ -150,7 +156,6 @@ def submit():
 # 📊 Dashboard
 @app.route("/dashboard")
 def dashboard():
-
     if "user" not in session:
         return redirect("/login")
 
@@ -164,13 +169,10 @@ def dashboard():
         (user,)
     )
     data = cursor.fetchall()
-
     conn.close()
 
-    # Total time
     total_time = sum([row[1] for row in data]) if data else 0
 
-    # Graph data
     labels = [row[2] for row in data]
     values = [row[1] for row in data]
 
@@ -185,13 +187,12 @@ def dashboard():
     # 🤖 AI Prediction
     if len(data) >= 5:
         avg = total_time / len(data)
-
         if avg > 60:
             prediction = "🔥 High performance expected!"
         elif avg > 30:
             prediction = "👍 Moderate performance"
         else:
-            prediction = "⚠️ Improve your consistency"
+            prediction = "⚠️ Improve consistency"
     else:
         prediction = "Not enough data"
 
@@ -209,4 +210,4 @@ def dashboard():
 
 # ================= RUN =================
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=10000)
+    app.run(host="0.0.0.0", port=10000)
