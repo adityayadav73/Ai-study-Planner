@@ -39,7 +39,7 @@ reminder.html │   └── dashboard.html
 
 ## 🌍 Live Demo
 
-👉 https://your-app-name.onrender.com
+👉 https://ai-study-planner-qo4e.onrender.com
 
 ---
 
