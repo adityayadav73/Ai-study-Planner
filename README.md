@@ -63,7 +63,7 @@ reminder.html │   └── dashboard.html
 
 ## 👨‍💻 Author
 
-- Your Name
+- Aditya Yadav
 
 ---
 
