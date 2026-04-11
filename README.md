@@ -1,6 +1,6 @@
 # 📚 AI Study Planner
 
-A full-stack AI-powered Study Assistant web app built using Flask.    
+A full-stack AI-powered Study Planner web app built using Flask.    
 Track your study time, manage subjects, and get smart insights with a beautiful dashboard.  
 
 ---
